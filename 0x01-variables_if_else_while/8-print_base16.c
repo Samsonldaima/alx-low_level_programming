@@ -1,21 +1,25 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'print numbers of base 16'
- * return: always 0
+ * main - main function
+ * Return: Returns 0 if successful
  */
+
 int main(void)
 {
-	int n;
-	int m;
+	unsigned char a = '0';
+	int i;
 
-	for (n = 48; n <= 57; n++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(n);
+		putchar(a);
+		a++;
 	}
-	for (m = 97; m <= 102; m++)
+	a = '1';
+	for (i = 0; i < 6; i++)
 	{
-		putchar(m);
+		putchar('0' + a);
+		a++;
 	}
 	putchar('\n');
 	return (0);
